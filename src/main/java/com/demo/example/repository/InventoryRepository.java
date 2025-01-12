@@ -2,11 +2,12 @@ package com.demo.example.repository;
 
 import com.demo.example.model.Fruit;
 import jakarta.annotation.PostConstruct;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Component
 public class InventoryRepository {
 
     ArrayList<Fruit> fruits;
