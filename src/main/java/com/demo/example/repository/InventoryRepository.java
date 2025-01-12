@@ -1,6 +1,7 @@
 package com.demo.example.repository;
 
 import com.demo.example.model.Fruit;
+import jakarta.annotation.PostConstruct;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,7 @@ public class InventoryRepository {
 
     ArrayList<Fruit> fruits;
 
+    @PostConstruct
     public void createFruitArrayList() {
         fruits = new ArrayList<>();
         Fruit apple = new Fruit("apple", 15, 50);
